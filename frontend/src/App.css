@@ -1,0 +1,172 @@
+body {
+  background-image: url("./download.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.container {
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #7abac6cc;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #010510;
+
+
+  animation: fadeSlide 1s ease-in-out;
+
+  
+  transition: all 0.3s ease;
+}
+
+
+h2:hover {
+  color: #a3aebd;
+  text-shadow: 0 0 10px rgba(230, 234, 239, 0.6);
+}
+
+.task-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+
+button {
+  margin-left: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: bold;                 
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;        
+}
+
+
+button:hover {
+  transform: scale(1.1);             
+  box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+
+button:active {
+  transform: scale(0.95);           
+}
+
+
+.addbtn {
+  margin-top: 10px;
+  font-size: 14px;
+  border: 2px solid green;
+  color: green;
+  background: transparent;
+}
+
+.addbtn:hover {
+  background: green;
+  color: white;
+}
+
+
+.editbtn {
+  color: blue;
+}
+
+.editbtn:hover {
+  background: blue;
+  color: white;
+}
+
+
+.delbtn {
+  color: red;
+}
+
+.delbtn:hover {
+  background: red;
+  color: white;
+}
+
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  cursor: pointer;
+}
+
+.tick {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  transition: 0.3s;
+}                 
